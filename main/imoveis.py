@@ -5,14 +5,15 @@ from bs4 import BeautifulSoup as bs
 from math import ceil
 
 # %%
-local = 'Rio de Janeiro'
-local = local.replace(' ', '-').lower()
+estado = 'sp'
+cidade = 'Sao Paulo'
+cidade = cidade.replace(' ', '-').lower()
 
-url = 'https://www.vivareal.com.br/venda/rj/{}/apartamento_residencial/?pagina={}'
+url = 'https://www.vivareal.com.br/venda/{}/{}/apartamento_residencial/?pagina={}'
 
 # %%
 i = 1
-ret = requests.get(url.format(local, i))
+ret = requests.get(url.format(estado, cidade, i))
 soup = bs(ret.text)
 #soup
 
