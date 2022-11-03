@@ -2,4 +2,4 @@
 
 <p> Coleta de dados fazendo uso da técnica de web scrapping.</p>
 
-<p> Os dados são coletados e armazenados em um arquivo .csv </p>
+<p> Os dados são coletados e armazenados em um arquivo <b><i> .csv </i></b></p>
